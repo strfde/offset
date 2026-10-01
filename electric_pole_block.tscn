@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cwa1i3udgfut"]
+
+[ext_resource type="Texture2D" uid="uid://bmjg6036652jr" path="res://electric_pole.png" id="1_480ve"]
+[ext_resource type="Script" uid="uid://d383kcivrk6u4" path="res://electric_area.gd" id="2_ac6ki"]
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="3_xyguo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ac6ki"]
+size = Vector2(25, 107)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xyguo"]
+size = Vector2(130, 22)
+
+[node name="Electric Pole Block" type="Node2D" unique_id=2004959421]
+
+[node name="Pole" type="StaticBody2D" parent="." unique_id=2010634962]
+
+[node name="Sprite2D" type="Sprite2D" parent="Pole" unique_id=1649063458]
+position = Vector2(0, 9)
+scale = Vector2(1, 0.859375)
+texture = ExtResource("1_480ve")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pole" unique_id=1268685154]
+position = Vector2(0.5, 11.5)
+shape = SubResource("RectangleShape2D_ac6ki")
+
+[node name="ElectricArea" type="Area2D" parent="." unique_id=669265241]
+script = ExtResource("2_ac6ki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ElectricArea" unique_id=15607148]
+position = Vector2(1, 53)
+shape = SubResource("RectangleShape2D_xyguo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=364901399]
+position = Vector2(0.50000143, 68.5)
+scale = Vector2(4.46875, 0.21875)
+texture = ExtResource("3_xyguo")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://je85oudk7t6d"]
+
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="1_fjn54"]
+
+[node name="Foreground" type="Sprite2D" unique_id=1276364639]
+modulate = Color(1, 1, 1, 0.5529412)
+scale = Vector2(31.031248, 35.000004)
+texture = ExtResource("1_fjn54")
