@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://vfd3asmto5c4"]
+
+[ext_resource type="Script" uid="uid://bgu3jywukyr8y" path="res://moving_block.gd" id="1_4fih0"]
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="2_5d3qs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fih0"]
+size = Vector2(96, 31)
+
+[node name="Moving Block" type="Node2D" unique_id=1748292847]
+script = ExtResource("1_4fih0")
+stop_loopping = false
+
+[node name="MovingBlock" type="AnimatableBody2D" parent="." unique_id=1906226457]
+
+[node name="Sprite2D" type="Sprite2D" parent="MovingBlock" unique_id=188650518]
+scale = Vector2(3, 1)
+texture = ExtResource("2_5d3qs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MovingBlock" unique_id=261443568]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_4fih0")

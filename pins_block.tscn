@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bs56r0vfxidq1"]
+
+[ext_resource type="Script" uid="uid://67m5reljy025" path="res://pins_block.gd" id="1_y4ygy"]
+[ext_resource type="Texture2D" uid="uid://mw3klkfgr6ou" path="res://pins_block_middle.png" id="2_6fdvu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8moc7"]
+size = Vector2(57, 17.5)
+
+[node name="Pins Block" type="Node2D" unique_id=832017123]
+script = ExtResource("1_y4ygy")
+
+[node name="PinsBlock" type="StaticBody2D" parent="." unique_id=1397181064]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PinsBlock" unique_id=870158365]
+position = Vector2(-0.5, 20.75)
+shape = SubResource("RectangleShape2D_8moc7")
+
+[node name="Sprite2D" type="Sprite2D" parent="PinsBlock" unique_id=569677396]
+position = Vector2(-16, 16)
+texture = ExtResource("2_6fdvu")
+
+[node name="Sprite2D2" type="Sprite2D" parent="PinsBlock" unique_id=1239570472]
+position = Vector2(16, 16)
+texture = ExtResource("2_6fdvu")

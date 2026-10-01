@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://dhg45bj5gtv42"]
+
+[ext_resource type="Theme" uid="uid://3qd4u0j82etm" path="res://theme.tres" id="1_mcy63"]
+[ext_resource type="PackedScene" uid="uid://b6q4v4d1apkx3" path="res://level_button.tscn" id="1_pssaq"]
+[ext_resource type="Script" uid="uid://igtcchk7k1o4" path="res://scroll_container.gd" id="2_g3bd0"]
+
+[node name="LevelMenu" type="Control" unique_id=234885746]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=977575051]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mcy63")
+draw_focus_border = true
+horizontal_scroll_mode = 0
+script = ExtResource("2_g3bd0")
+metadata/_edit_use_anchors_ = true
+
+[node name="GridContainer" type="GridContainer" parent="ScrollContainer" unique_id=1119484135]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
+columns = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="LevelButton" parent="ScrollContainer/GridContainer" unique_id=1575799726 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "1"
+
+[node name="LevelButton2" parent="ScrollContainer/GridContainer" unique_id=1562023431 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "2"
+
+[node name="LevelButton3" parent="ScrollContainer/GridContainer" unique_id=1742414920 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "3"
+
+[node name="LevelButton4" parent="ScrollContainer/GridContainer" unique_id=843660896 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "4"
+
+[node name="LevelButton5" parent="ScrollContainer/GridContainer" unique_id=490151822 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "5"
+
+[node name="LevelButton6" parent="ScrollContainer/GridContainer" unique_id=1288954881 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "6"
+
+[node name="LevelButton7" parent="ScrollContainer/GridContainer" unique_id=1364249500 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "7"
+
+[node name="LevelButton8" parent="ScrollContainer/GridContainer" unique_id=623030433 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "8"
+
+[node name="LevelButton9" parent="ScrollContainer/GridContainer" unique_id=869227691 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "9"
+
+[node name="LevelButton10" parent="ScrollContainer/GridContainer" unique_id=277921252 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "10"
+
+[node name="LevelButton11" parent="ScrollContainer/GridContainer" unique_id=1731878196 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "11"
+
+[node name="LevelButton12" parent="ScrollContainer/GridContainer" unique_id=715213316 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "12"
+
+[node name="LevelButton13" parent="ScrollContainer/GridContainer" unique_id=2123611612 instance=ExtResource("1_pssaq")]
+layout_mode = 2
+text = "13"

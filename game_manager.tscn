@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://c4tkpsudmf7f"]
+
+[ext_resource type="Script" uid="uid://cuo7ugou046kb" path="res://game_manager.gd" id="1_70yv6"]
+[ext_resource type="PackedScene" uid="uid://cm8u41d2l54qq" path="res://game_over_menu.tscn" id="2_smx3j"]
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="3_o2178"]
+[ext_resource type="PackedScene" uid="uid://lag8wsd0vu31" path="res://pause_menu.tscn" id="4_d5upp"]
+
+[node name="GameManager" type="Node2D" unique_id=1780764065]
+script = ExtResource("1_70yv6")
+
+[node name="Game Over Menu" parent="." unique_id=1937733866 instance=ExtResource("2_smx3j")]
+visible = false
+
+[node name="BlackScreen" type="Sprite2D" parent="." unique_id=600852669]
+visible = false
+modulate = Color(1, 1, 1, 0.27450982)
+position = Vector2(962, 546)
+scale = Vector2(59.9375, 33.9375)
+texture = ExtResource("3_o2178")
+
+[node name="Pause Menu" parent="." unique_id=1334465467 instance=ExtResource("4_d5upp")]
+visible = false

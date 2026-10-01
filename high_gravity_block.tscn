@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://jq0rjki7ub5b"]
+
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="1_ic85l"]
+[ext_resource type="Script" uid="uid://d23wrkj0f5anb" path="res://high_gravity_area.gd" id="2_86sn1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_86sn1"]
+size = Vector2(32, 31)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6h2wy"]
+size = Vector2(11, 545.5)
+
+[node name="High Gravity Block" type="Node2D" unique_id=129775595]
+
+[node name="BaseBlock" type="StaticBody2D" parent="." unique_id=1985584441]
+scale = Vector2(1, 1.0799992)
+
+[node name="Sprite2D" type="Sprite2D" parent="BaseBlock" unique_id=1924665796]
+texture = ExtResource("1_ic85l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BaseBlock" unique_id=1657596244]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_86sn1")
+
+[node name="HighGravityArea" type="Area2D" parent="." unique_id=1178785768]
+script = ExtResource("2_86sn1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HighGravityArea" unique_id=333687140]
+position = Vector2(0, -371.25)
+shape = SubResource("RectangleShape2D_6h2wy")
+
+[node name="WorldBlock" type="Sprite2D" parent="HighGravityArea" unique_id=1219218360]
+modulate = Color(1, 1, 1, 0.11764706)
+position = Vector2(0, -373.00003)
+scale = Vector2(0.3125, 17)
+texture = ExtResource("1_ic85l")

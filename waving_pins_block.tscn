@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dmfnjw07mqt5t"]
+
+[ext_resource type="Script" uid="uid://cjlgdil0jbkpv" path="res://waving_pins_block.gd" id="1_x4qpj"]
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="2_xifgd"]
+[ext_resource type="PackedScene" uid="uid://bs56r0vfxidq1" path="res://pins_block.tscn" id="3_x4qpj"]
+[ext_resource type="Script" uid="uid://cyjgsjtoes8j6" path="res://waving_block_entry_area.gd" id="3_xifgd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qgb4u"]
+size = Vector2(64, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lk2lj"]
+size = Vector2(65, 64)
+
+[node name="Waving Pins Block" type="Node2D" unique_id=984487582]
+script = ExtResource("1_x4qpj")
+
+[node name="WavingBlock" type="AnimatableBody2D" parent="." unique_id=1787997691]
+position = Vector2(-32, 20)
+
+[node name="Sprite2D" type="Sprite2D" parent="WavingBlock" unique_id=1589353008]
+scale = Vector2(2, 1)
+texture = ExtResource("2_xifgd")
+offset = Vector2(16, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WavingBlock" unique_id=1277404757]
+position = Vector2(32, -16)
+shape = SubResource("RectangleShape2D_qgb4u")
+
+[node name="Pins Block" parent="." unique_id=832017123 instance=ExtResource("3_x4qpj")]
+position = Vector2(0, -12)
+
+[node name="Waving Block Entry Area" type="Area2D" parent="." unique_id=1278261524]
+position = Vector2(-64, -32)
+script = ExtResource("3_xifgd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Waving Block Entry Area" unique_id=2119803402]
+position = Vector2(-56.5, -17)
+shape = SubResource("RectangleShape2D_lk2lj")

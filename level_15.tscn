@@ -1,0 +1,82 @@
+[gd_scene format=4 uid="uid://cj1qyubm7kswb"]
+
+[ext_resource type="TileSet" uid="uid://cgvui00ffwnp4" path="res://world.tres" id="1_041kt"]
+[ext_resource type="PackedScene" uid="uid://fgrvn81n2qta" path="res://vanish_on_hit_block.tscn" id="2_ys455"]
+[ext_resource type="PackedScene" uid="uid://bs56r0vfxidq1" path="res://pins_block.tscn" id="3_rtln1"]
+[ext_resource type="PackedScene" uid="uid://bk1hpf6q4si08" path="res://vanishing_block.tscn" id="4_rtln1"]
+[ext_resource type="PackedScene" uid="uid://vfd3asmto5c4" path="res://moving_block.tscn" id="5_r3kyx"]
+[ext_resource type="PackedScene" uid="uid://jq0rjki7ub5b" path="res://high_gravity_block.tscn" id="6_ojr5k"]
+[ext_resource type="PackedScene" uid="uid://db2148ckrx61p" path="res://ceiling_pins.tscn" id="7_hyenc"]
+[ext_resource type="PackedScene" uid="uid://y85bhqxcxshc" path="res://player.tscn" id="8_nhg76"]
+[ext_resource type="PackedScene" uid="uid://baw1ryu717fpq" path="res://target_2.tscn" id="9_fi1vt"]
+[ext_resource type="PackedScene" uid="uid://c4tkpsudmf7f" path="res://game_manager.tscn" id="10_p5j5u"]
+[ext_resource type="PackedScene" uid="uid://je85oudk7t6d" path="res://foreground.tscn" id="11_ojr5k"]
+
+[node name="Level_15" type="Node2D" unique_id=1060837568]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=730798968]
+tile_map_data = PackedByteArray("AAAdAAEAAAAAAAAAAAAdAAUAAAAAAAAAAAAdAAYAAAAAAAAAAAAdAAcAAAAAAAAAAAAdAAgAAAAAAAAAAAAdAAkAAAAAAAAAAAAdAAoAAAAAAAAAAAAdAAsAAAAAAAAAAAAdAAwAAAAAAAAAAAAdAA0AAAAAAAAAAAAdAA4AAAAAAAAAAAAdAA8AAAAAAAAAAAAdABAAAAAAAAAAAAAdABEAAAAAAAAAAAAdABIAAAAAAAAAAAAdABMAAAAAAAAAAAAZABAAAAAAAAAAAAAZABEAAAAAAAAAAAAZABIAAAAAAAAAAAAZABMAAAAAAAAAAAAZABQAAAAAAAAAAAAZABUAAAAAAAAAAAAZABYAAAAAAAAAAAAZABcAAAAAAAAAAAAdABQAAAAAAAAAAAAdABUAAAAAAAAAAAAdABYAAAAAAAAAAAAdABcAAAAAAAAAAAAeABAAAAAAAAAAAAAeABEAAAAAAAAAAAAeABIAAAAAAAAAAAAeABMAAAAAAAAAAAAeABQAAAAAAAAAAAAeABUAAAAAAAAAAAAeABYAAAAAAAAAAAAeABcAAAAAAAAAAAAfABcAAAAAAAAAAAAgABcAAAAAAAAAAAAhABcAAAAAAAAAAAAiABAAAAAAAAAAAAAiABEAAAAAAAAAAAAiABIAAAAAAAAAAAAiABMAAAAAAAAAAAAiABQAAAAAAAAAAAAiABUAAAAAAAAAAAAiABYAAAAAAAAAAAAiABcAAAAAAAAAAAAZABgAAAAAAAAAAAAdABgAAAAAAAAAAAAeABgAAAAAAAAAAAAfABgAAAAAAAAAAAAgABgAAAAAAAAAAAAhABgAAAAAAAAAAAAiABgAAAAAAAAAAAAAABAAAAAAAAAAAAABABAAAAAAAAAAAAACABAAAAAAAAAAAAA5ABAAAAAAAAAAAAA6ABAAAAAAAAAAAAA7ABAAAAAAAAAAAAAAACEAAAAAAAAAAAABACEAAAAAAAAAAAACACEAAAAAAAAAAAADACEAAAAAAAAAAAAEACEAAAAAAAAAAAAFACEAAAAAAAAAAAAGACEAAAAAAAAAAAAHACEAAAAAAAAAAAAIACEAAAAAAAAAAAAJACEAAAAAAAAAAAAKACEAAAAAAAAAAAALACEAAAAAAAAAAAAMACEAAAAAAAAAAAANACEAAAAAAAAAAAAOACEAAAAAAAAAAAAPACEAAAAAAAAAAAAQACEAAAAAAAAAAAARACEAAAAAAAAAAAASACEAAAAAAAAAAAATACEAAAAAAAAAAAAUACEAAAAAAAAAAAAVACEAAAAAAAAAAAAWACEAAAAAAAAAAAAXACEAAAAAAAAAAAAYACEAAAAAAAAAAAAZACEAAAAAAAAAAAAaACEAAAAAAAAAAAAbACEAAAAAAAAAAAAcACEAAAAAAAAAAAAdACEAAAAAAAAAAAAeACEAAAAAAAAAAAAfACEAAAAAAAAAAAAgACEAAAAAAAAAAAAhACEAAAAAAAAAAAAiACEAAAAAAAAAAAAjACEAAAAAAAAAAAAkACEAAAAAAAAAAAAlACEAAAAAAAAAAAAmACEAAAAAAAAAAAAnACEAAAAAAAAAAAAoACEAAAAAAAAAAAApACEAAAAAAAAAAAAqACEAAAAAAAAAAAArACEAAAAAAAAAAAAsACEAAAAAAAAAAAAtACEAAAAAAAAAAAAuACEAAAAAAAAAAAAvACEAAAAAAAAAAAAwACEAAAAAAAAAAAAxACEAAAAAAAAAAAAyACEAAAAAAAAAAAAzACEAAAAAAAAAAAA0ACEAAAAAAAAAAAA1ACEAAAAAAAAAAAA2ACEAAAAAAAAAAAA3ACEAAAAAAAAAAAA4ACEAAAAAAAAAAAA5ACEAAAAAAAAAAAA6ACEAAAAAAAAAAAA7ACEAAAAAAAAAAAAMABgAAAAAAAAAAAANABgAAAAAAAAAAAAOABgAAAAAAAAAAAAPABgAAAAAAAAAAAAQABgAAAAAAAAAAAARABgAAAAAAAAAAAASABgAAAAAAAAAAAATABgAAAAAAAAAAAAUABgAAAAAAAAAAAAVABgAAAAAAAAAAAAWABgAAAAAAAAAAAAXABgAAAAAAAAAAAAYABgAAAAAAAAAAAAAABgAAAAAAAAAAAABABgAAAAAAAAAAAACABgAAAAAAAAAAAADABgAAAAAAAAAAAAEABgAAAAAAAAAAAASAAgAAAAAAAAAAAAUAAgAAAAAAAAAAAATAAgAAAAAAAAAAAAxABAAAAAAAAAAAAA=")
+tile_set = ExtResource("1_041kt")
+
+[node name="Vanish On Hit Block" parent="." unique_id=1129386427 instance=ExtResource("2_ys455")]
+position = Vector2(880, 656.00006)
+scale = Vector2(3, 9)
+
+[node name="Vanish On Hit Block2" parent="." unique_id=1574170302 instance=ExtResource("2_ys455")]
+position = Vector2(1040, 627)
+scale = Vector2(3, 7)
+
+[node name="Pins Block" parent="." unique_id=832017123 instance=ExtResource("3_rtln1")]
+position = Vector2(879, 1010)
+scale = Vector2(2, 2)
+
+[node name="Pins Block3" parent="." unique_id=1995157844 instance=ExtResource("3_rtln1")]
+position = Vector2(1566, 605)
+scale = Vector2(2, 2)
+
+[node name="Pins Block4" parent="." unique_id=207473637 instance=ExtResource("3_rtln1")]
+position = Vector2(205, 746)
+scale = Vector2(2, 2)
+
+[node name="Pins Block2" parent="." unique_id=380177599 instance=ExtResource("3_rtln1")]
+position = Vector2(1037, 672)
+rotation = -1.5707964
+scale = Vector2(2, 2)
+
+[node name="Vanish On Hit Block3" parent="." unique_id=1815049225 instance=ExtResource("2_ys455")]
+position = Vector2(944, 113)
+scale = Vector2(1, 3)
+
+[node name="Vanish On Hit Block4" parent="." unique_id=1024525460 instance=ExtResource("2_ys455")]
+position = Vector2(204, 784)
+scale = Vector2(4, 1)
+
+[node name="Vanish On Hit Block5" parent="." unique_id=1356673819 instance=ExtResource("2_ys455")]
+position = Vector2(332, 784)
+scale = Vector2(4, 1)
+
+[node name="Vanishing Block" parent="." unique_id=1259681071 instance=ExtResource("4_rtln1")]
+position = Vector2(861, 363)
+
+[node name="Moving Block" parent="." unique_id=1748292847 instance=ExtResource("5_r3kyx")]
+position = Vector2(347, 556)
+
+[node name="High Gravity Block" parent="." unique_id=129775595 instance=ExtResource("6_ojr5k")]
+position = Vector2(957, 1556)
+
+[node name="Ceiling" parent="." unique_id=1974368930 instance=ExtResource("7_hyenc")]
+position = Vector2(-1, -10)
+
+[node name="Player" parent="." unique_id=485068755 instance=ExtResource("8_nhg76")]
+position = Vector2(44, 470)
+
+[node name="Target_2" parent="." unique_id=329395216 instance=ExtResource("9_fi1vt")]
+position = Vector2(1870, 471)
+
+[node name="GameManager" parent="." unique_id=1780764065 node_paths=PackedStringArray("player", "target") instance=ExtResource("10_p5j5u")]
+player = NodePath("../Player")
+target = NodePath("../Target_2")
+
+[node name="Foreground" parent="." unique_id=1276364639 instance=ExtResource("11_ojr5k")]
+position = Vector2(1448, 388.49997)
+scale = Vector2(31.25, 25.843752)

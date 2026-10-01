@@ -1,0 +1,106 @@
+[gd_scene format=4 uid="uid://c75bltedhl2bl"]
+
+[ext_resource type="TileSet" uid="uid://cgvui00ffwnp4" path="res://world.tres" id="1_aab6h"]
+[ext_resource type="PackedScene" uid="uid://db2148ckrx61p" path="res://ceiling_pins.tscn" id="2_4y126"]
+[ext_resource type="PackedScene" uid="uid://bs56r0vfxidq1" path="res://pins_block.tscn" id="3_7i33c"]
+[ext_resource type="PackedScene" uid="uid://jq0rjki7ub5b" path="res://high_gravity_block.tscn" id="4_4y126"]
+[ext_resource type="PackedScene" uid="uid://dmfnjw07mqt5t" path="res://waving_pins_block.tscn" id="5_7i33c"]
+[ext_resource type="PackedScene" uid="uid://bk1hpf6q4si08" path="res://vanishing_block.tscn" id="6_xx8ku"]
+[ext_resource type="PackedScene" uid="uid://fgrvn81n2qta" path="res://vanish_on_hit_block.tscn" id="7_a721k"]
+[ext_resource type="PackedScene" uid="uid://vfd3asmto5c4" path="res://moving_block.tscn" id="8_w5e11"]
+[ext_resource type="PackedScene" uid="uid://c1f6myvwhyluu" path="res://target.tscn" id="9_e3b7f"]
+[ext_resource type="PackedScene" uid="uid://y85bhqxcxshc" path="res://player.tscn" id="10_aie2w"]
+[ext_resource type="PackedScene" uid="uid://c4tkpsudmf7f" path="res://game_manager.tscn" id="11_lv1pg"]
+
+[node name="Level_9" type="Node2D" unique_id=870075886]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1832094004]
+tile_map_data = PackedByteArray("AAABACAAAAAAAAAAAAAaACAAAAAAAAAAAAAgACAAAAAAAAAAAAAhACAAAAAAAAAAAAAiACAAAAAAAAAAAAAjACAAAAAAAAAAAAAkACAAAAAAAAAAAAAlACAAAAAAAAAAAAAmACAAAAAAAAAAAAAnACAAAAAAAAAAAAAoACAAAAAAAAAAAAApACAAAAAAAAAAAAAqACAAAAAAAAAAAAArACAAAAAAAAAAAAAsACAAAAAAAAAAAAAtACAAAAAAAAAAAAAuACAAAAAAAAAAAAAvACAAAAAAAAAAAAAwACAAAAAAAAAAAAAxACAAAAAAAAAAAAAyACAAAAAAAAAAAAAzACAAAAAAAAAAAAA0ACAAAAAAAAAAAAA1ACAAAAAAAAAAAAA2ACAAAAAAAAAAAAA3ACAAAAAAAAAAAAA4ACAAAAAAAAAAAAA5ACAAAAAAAAAAAAA6ACAAAAAAAAAAAAA2AAgAAAAAAAAAAAA3AAgAAAAAAAAAAAA4AAgAAAAAAAAAAAA5AAgAAAAAAAAAAAABABsAAAAAAAAAAAACABsAAAAAAAAAAAADABsAAAAAAAAAAAAEABsAAAAAAAAAAAAJABcAAAAAAAAAAAAJABgAAAAAAAAAAAAJABkAAAAAAAAAAAAJABoAAAAAAAAAAAAJABYAAAAAAAAAAAANABEAAAAAAAAAAAANABIAAAAAAAAAAAANABMAAAAAAAAAAAACABMAAAAAAAAAAAABAA0AAAAAAAAAAAABAA4AAAAAAAAAAAABAA8AAAAAAAAAAAAHAAgAAAAAAAAAAAAMAAgAAAAAAAAAAAANAAgAAAAAAAAAAAAOAAgAAAAAAAAAAAAPAAgAAAAAAAAAAAAQAAUAAAAAAAAAAAARAAUAAAAAAAAAAAASAAUAAAAAAAAAAAATAAUAAAAAAAAAAAAUAAUAAAAAAAAAAAAYAAcAAAAAAAAAAAAhAAUAAAAAAAAAAAAQAAwAAAAAAAAAAAAUAAwAAAAAAAAAAAAdAA0AAAAAAAAAAAAmAA8AAAAAAAAAAAAmABAAAAAAAAAAAAAmABEAAAAAAAAAAAAmABIAAAAAAAAAAAAmABMAAAAAAAAAAAAmABQAAAAAAAAAAAApABgAAAAAAAAAAAAqABgAAAAAAAAAAAArABgAAAAAAAAAAAAsABgAAAAAAAAAAAAtABgAAAAAAAAAAAAxAA0AAAAAAAAAAAAxAA4AAAAAAAAAAAAxAA8AAAAAAAAAAAAxABAAAAAAAAAAAAAxABEAAAAAAAAAAAAxABIAAAAAAAAAAAA5AA0AAAAAAAAAAAA5AA4AAAAAAAAAAAA5AA8AAAAAAAAAAAA5ABAAAAAAAAAAAAA6AA0AAAAAAAAAAAA6AA4AAAAAAAAAAAA6AA8AAAAAAAAAAAA6ABAAAAAAAAAAAAA5ABMAAAAAAAAAAAA5ABQAAAAAAAAAAAA5ABUAAAAAAAAAAAA5ABYAAAAAAAAAAAA5ABcAAAAAAAAAAAAzABkAAAAAAAAAAAA0ABkAAAAAAAAAAAA1ABkAAAAAAAAAAAA2ABkAAAAAAAAAAAAvABUAAAAAAAAAAAAvABYAAAAAAAAAAAAvABcAAAAAAAAAAAAvABgAAAAAAAAAAAAvABkAAAAAAAAAAAAkABkAAAAAAAAAAAAkABoAAAAAAAAAAAAkABsAAAAAAAAAAAAkABwAAAAAAAAAAAAkAB0AAAAAAAAAAAATABoAAAAAAAAAAAAXABsAAAAAAAAAAAAXABwAAAAAAAAAAAAYABsAAAAAAAAAAAAYABwAAAAAAAAAAAAZABsAAAAAAAAAAAAZABwAAAAAAAAAAAAaABsAAAAAAAAAAAAaABwAAAAAAAAAAAAbABsAAAAAAAAAAAAbABwAAAAAAAAAAAAcABEAAAAAAAAAAAA=")
+tile_set = ExtResource("1_aab6h")
+
+[node name="Ceiling" parent="." unique_id=1974368930 instance=ExtResource("2_4y126")]
+
+[node name="Pins Block16" parent="Ceiling" unique_id=832017123 instance=ExtResource("3_7i33c")]
+position = Vector2(134, 993)
+scale = Vector2(2, 2)
+
+[node name="Pins Block17" parent="Ceiling" unique_id=55590550 instance=ExtResource("3_7i33c")]
+position = Vector2(260, 993)
+scale = Vector2(2, 2)
+
+[node name="Pins Block18" parent="Ceiling" unique_id=1991929382 instance=ExtResource("3_7i33c")]
+position = Vector2(383, 993)
+scale = Vector2(2, 2)
+
+[node name="Pins Block19" parent="Ceiling" unique_id=1870019706 instance=ExtResource("3_7i33c")]
+position = Vector2(509, 993)
+scale = Vector2(2, 2)
+
+[node name="Pins Block20" parent="Ceiling" unique_id=824941051 instance=ExtResource("3_7i33c")]
+position = Vector2(636, 993)
+scale = Vector2(2, 2)
+
+[node name="Pins Block21" parent="Ceiling" unique_id=1891347499 instance=ExtResource("3_7i33c")]
+position = Vector2(762, 993)
+scale = Vector2(2, 2)
+
+[node name="High Gravity Block" parent="." unique_id=129775595 instance=ExtResource("4_4y126")]
+position = Vector2(1986, 993)
+rotation = -1.5707964
+
+[node name="High Gravity Block2" parent="." unique_id=2122167381 instance=ExtResource("4_4y126")]
+position = Vector2(2314, 356)
+rotation = -1.5707964
+
+[node name="High Gravity Block3" parent="." unique_id=1787889581 instance=ExtResource("4_4y126")]
+position = Vector2(1472, -404)
+rotation = 3.1415927
+
+[node name="Waving Pins Block" parent="." unique_id=984487582 instance=ExtResource("5_7i33c")]
+position = Vector2(908, 641)
+rotation = -1.5707964
+scale = Vector2(2, 1)
+
+[node name="Vanishing Block" parent="." unique_id=1259681071 instance=ExtResource("6_xx8ku")]
+position = Vector2(624, 783.00006)
+scale = Vector2(1, 3)
+duration = 2.0
+
+[node name="Vanish On Hit Block" parent="." unique_id=1129386427 instance=ExtResource("7_a721k")]
+position = Vector2(592, 401)
+scale = Vector2(3, 1)
+
+[node name="Vanish On Hit Block2" parent="." unique_id=360688040 instance=ExtResource("7_a721k")]
+position = Vector2(160, 624)
+scale = Vector2(4, 1)
+
+[node name="Waving Pins Block2" parent="." unique_id=1173210122 instance=ExtResource("5_7i33c")]
+position = Vector2(236, 192)
+rotation = -1.5707964
+scale = Vector2(2, 1)
+
+[node name="Moving Block" parent="." unique_id=1748292847 instance=ExtResource("8_w5e11")]
+position = Vector2(1135, 176)
+offset = Vector2(200, 0)
+
+[node name="Moving Block2" parent="." unique_id=1528252273 instance=ExtResource("8_w5e11")]
+position = Vector2(848, 240)
+offset = Vector2(0, -100)
+stop_loopping = true
+stop_moving = true
+
+[node name="Moving Block3" parent="." unique_id=919926453 instance=ExtResource("8_w5e11")]
+position = Vector2(1056, 432)
+scale = Vector2(2, 1)
+offset = Vector2(0, -100)
+stop_loopping = true
+stop_moving = true
+
+[node name="Target" parent="." unique_id=154009621 instance=ExtResource("9_e3b7f")]
+position = Vector2(1411, 222)
+
+[node name="Player" parent="." unique_id=485068755 instance=ExtResource("10_aie2w")]
+position = Vector2(87, 749)
+
+[node name="GameManager" parent="." unique_id=1780764065 node_paths=PackedStringArray("player") instance=ExtResource("11_lv1pg")]
+player = NodePath("../Player")

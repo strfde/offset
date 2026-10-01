@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bk1hpf6q4si08"]
+
+[ext_resource type="Script" uid="uid://bvj6xd2bnnbmx" path="res://vanishing_block.gd" id="1_lsat4"]
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="2_4pu86"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_irv24"]
+size = Vector2(32, 32)
+
+[node name="Vanishing Block" type="Node2D" unique_id=1259681071]
+script = ExtResource("1_lsat4")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1096493127]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1896250024]
+shape = SubResource("RectangleShape2D_irv24")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=531961807]
+texture = ExtResource("2_4pu86")

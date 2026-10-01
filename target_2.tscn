@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://baw1ryu717fpq"]
+
+[ext_resource type="Texture2D" uid="uid://dphsjoicrl5tv" path="res://player__target_2_0.png" id="1_5pcfp"]
+[ext_resource type="Script" uid="uid://dupxso5x6avgu" path="res://target_2.gd" id="1_yffew"]
+[ext_resource type="Texture2D" uid="uid://bth1vtdfctgav" path="res://player__target_2_180.png" id="2_yffew"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5pcfp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5pcfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yffew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_5pcfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yffew")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yffew"]
+radius = 31.257
+
+[node name="Target_2" type="CharacterBody2D" unique_id=329395216]
+script = ExtResource("1_yffew")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1598807014]
+sprite_frames = SubResource("SpriteFrames_5pcfp")
+frame_progress = 0.2437254
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=956773430]
+shape = SubResource("CircleShape2D_yffew")

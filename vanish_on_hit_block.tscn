@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://fgrvn81n2qta"]
+
+[ext_resource type="Texture2D" uid="uid://bjbnirh4meo14" path="res://world_block.png" id="1_hkoam"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4rr3w"]
+size = Vector2(32, 32)
+
+[node name="Vanish On Hit Block" type="StaticBody2D" unique_id=1129386427]
+
+[node name="WorldBlock" type="Sprite2D" parent="." unique_id=945629053]
+texture = ExtResource("1_hkoam")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1794613559]
+shape = SubResource("RectangleShape2D_4rr3w")

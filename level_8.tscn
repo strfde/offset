@@ -1,0 +1,81 @@
+[gd_scene format=4 uid="uid://bocegm6xd7pl"]
+
+[ext_resource type="TileSet" uid="uid://cgvui00ffwnp4" path="res://world.tres" id="1_dfxo2"]
+[ext_resource type="PackedScene" uid="uid://db2148ckrx61p" path="res://ceiling_pins.tscn" id="2_cefe7"]
+[ext_resource type="PackedScene" uid="uid://jq0rjki7ub5b" path="res://high_gravity_block.tscn" id="3_6p3fb"]
+[ext_resource type="PackedScene" uid="uid://vfd3asmto5c4" path="res://moving_block.tscn" id="4_6p3fb"]
+[ext_resource type="PackedScene" uid="uid://bk1hpf6q4si08" path="res://vanishing_block.tscn" id="5_h6j53"]
+[ext_resource type="PackedScene" uid="uid://dmfnjw07mqt5t" path="res://waving_pins_block.tscn" id="6_o6l31"]
+[ext_resource type="PackedScene" uid="uid://c1f6myvwhyluu" path="res://target.tscn" id="7_1xcjx"]
+[ext_resource type="PackedScene" uid="uid://y85bhqxcxshc" path="res://player.tscn" id="8_23fq3"]
+[ext_resource type="PackedScene" uid="uid://c4tkpsudmf7f" path="res://game_manager.tscn" id="9_mjcbx"]
+
+[node name="Level_8" type="Node2D" unique_id=1976840979]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1505994530]
+tile_map_data = PackedByteArray("AAABACAAAAAAAAAAAAACACAAAAAAAAAAAAADACAAAAAAAAAAAAAEACAAAAAAAAAAAAAFACAAAAAAAAAAAAAGACAAAAAAAAAAAAAHACAAAAAAAAAAAAAIACAAAAAAAAAAAAAJACAAAAAAAAAAAAAKACAAAAAAAAAAAAALACAAAAAAAAAAAAAMACAAAAAAAAAAAAANACAAAAAAAAAAAAAOACAAAAAAAAAAAAAPACAAAAAAAAAAAAAQACAAAAAAAAAAAAARACAAAAAAAAAAAAASACAAAAAAAAAAAAATACAAAAAAAAAAAAAUACAAAAAAAAAAAAAVACAAAAAAAAAAAAAWACAAAAAAAAAAAAAXACAAAAAAAAAAAAAYACAAAAAAAAAAAAAZACAAAAAAAAAAAAAgACAAAAAAAAAAAAAhACAAAAAAAAAAAAAiACAAAAAAAAAAAAAjACAAAAAAAAAAAAAtACAAAAAAAAAAAAAuACAAAAAAAAAAAAAvACAAAAAAAAAAAAAwACAAAAAAAAAAAAA0ACAAAAAAAAAAAAA1ACAAAAAAAAAAAAA2ACAAAAAAAAAAAAABAB8AAAAAAAAAAAACAB8AAAAAAAAAAAADAB8AAAAAAAAAAAAEAB8AAAAAAAAAAAAFAB8AAAAAAAAAAAAGAB8AAAAAAAAAAAAHAB8AAAAAAAAAAAAIAB8AAAAAAAAAAAAJAB8AAAAAAAAAAAAKAB8AAAAAAAAAAAALAB8AAAAAAAAAAAAMAB8AAAAAAAAAAAANAB8AAAAAAAAAAAAOAB8AAAAAAAAAAAAPAB8AAAAAAAAAAAAQAB8AAAAAAAAAAAARAB8AAAAAAAAAAAASAB8AAAAAAAAAAAATAB8AAAAAAAAAAAAUAB8AAAAAAAAAAAAVAB8AAAAAAAAAAAAWAB8AAAAAAAAAAAAXAB8AAAAAAAAAAAAYAB8AAAAAAAAAAAAZAB8AAAAAAAAAAAAgAB8AAAAAAAAAAAAhAB8AAAAAAAAAAAAiAB8AAAAAAAAAAAAjAB8AAAAAAAAAAAAtAB8AAAAAAAAAAAAuAB8AAAAAAAAAAAAvAB8AAAAAAAAAAAAwAB8AAAAAAAAAAAA0AB8AAAAAAAAAAAA1AB8AAAAAAAAAAAA2AB8AAAAAAAAAAAD7/yMAAAAAAAAAAAD8/yMAAAAAAAAAAAD6/yMAAAAAAAAAAAD5/yMAAAAAAAAAAAA6AB8AAAAAAAAAAAA6ACAAAAAAAAAAAAA/ACMAAAAAAAAAAABAACMAAAAAAAAAAABBACMAAAAAAAAAAABCACMAAAAAAAAAAAAAAAAAAAAAAAAAAAA7AAAAAAAAAAAAAAAeABUAAAAAAAAAAAAfABUAAAAAAAAAAAAgABUAAAAAAAAAAAArABEAAAAAAAAAAAA=")
+tile_set = ExtResource("1_dfxo2")
+
+[node name="Ceiling" parent="." unique_id=1974368930 instance=ExtResource("2_cefe7")]
+
+[node name="High Gravity Block" parent="." unique_id=129775595 instance=ExtResource("3_6p3fb")]
+position = Vector2(-71, 771)
+rotation = 1.5707964
+
+[node name="High Gravity Block2" parent="." unique_id=1541282028 instance=ExtResource("3_6p3fb")]
+position = Vector2(2072, 771)
+rotation = -1.5707964
+scale = Vector2(1, 1.8)
+
+[node name="Moving Block" parent="." unique_id=1748292847 instance=ExtResource("4_6p3fb")]
+position = Vector2(479, 694)
+offset = Vector2(-300, 0)
+duration = 4
+
+[node name="Moving Block2" parent="." unique_id=2145656689 instance=ExtResource("4_6p3fb")]
+position = Vector2(100, 414)
+offset = Vector2(200, 0)
+duration = 3
+
+[node name="Moving Block5" parent="." unique_id=157461325 instance=ExtResource("4_6p3fb")]
+position = Vector2(1114, 177)
+offset = Vector2(400, 0)
+duration = 6
+stop_loopping = true
+stop_moving = true
+
+[node name="Moving Block3" parent="." unique_id=1277793271 instance=ExtResource("4_6p3fb")]
+position = Vector2(344, 199)
+offset = Vector2(0, -120)
+duration = 6
+stop_loopping = true
+stop_moving = true
+
+[node name="Moving Block4" parent="." unique_id=649834959 instance=ExtResource("4_6p3fb")]
+position = Vector2(1760, 272)
+offset = Vector2(0, -200)
+stop_loopping = true
+stop_moving = true
+
+[node name="Vanishing Block" parent="." unique_id=1259681071 instance=ExtResource("5_h6j53")]
+position = Vector2(762, 902)
+scale = Vector2(4, 2)
+duration = 1.5
+
+[node name="Vanishing Block2" parent="." unique_id=1976638401 instance=ExtResource("5_h6j53")]
+position = Vector2(922, 356)
+scale = Vector2(4, 2)
+duration = 2.0
+
+[node name="Waving Pins Block" parent="." unique_id=984487582 instance=ExtResource("6_o6l31")]
+position = Vector2(1468, 556)
+scale = Vector2(2, 1)
+
+[node name="Target" parent="." unique_id=154009621 instance=ExtResource("7_1xcjx")]
+position = Vector2(605, 77)
+
+[node name="Player" parent="." unique_id=485068755 instance=ExtResource("8_23fq3")]
+position = Vector2(75, 897)
+
+[node name="GameManager" parent="." unique_id=1780764065 node_paths=PackedStringArray("player") instance=ExtResource("9_mjcbx")]
+player = NodePath("../Player")
